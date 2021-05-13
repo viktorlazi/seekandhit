@@ -25,3 +25,11 @@ ul{
   height: 200px;
   overflow: hidden;
 }
+
+input{
+  outline: none;
+  padding: 8px;
+}
+input:focus{
+  outline: none;
+}
