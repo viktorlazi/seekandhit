@@ -1,8 +1,10 @@
 import './App.css';
 import Clicky from './Components/Clicky';
 import ClickyStore from './Stores/ClickyStore';
+import ListStore from './Stores/ListStore';
 
-const clickyStore = new ClickyStore();
+const listStore = new ListStore();
+const clickyStore = new ClickyStore((x)=>listStore.addColour(x));
 
 function App() {
   return (
