@@ -1,10 +1,11 @@
 import './App.css';
+import Clicky from './Components/Clicky';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>alo</p>
+        <Clicky content='alo' />
       </header>
     </div>
   );
