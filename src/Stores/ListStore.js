@@ -6,6 +6,6 @@ export default class ListStore{
     makeAutoObservable(this);
   }
   addColour(x){
-    this.colours.push(x);
+    this.colours.unshift(x);
   }
 }
