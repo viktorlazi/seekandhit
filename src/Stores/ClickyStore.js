@@ -10,6 +10,5 @@ export default class ClickyStore{
     fetch('http://www.colr.org/json/color/random', {cache:'no-store'})
     .then(res=>res.json())
     .then(action(data=>{this.colourHex = '#'+data.colors[0].hex}));
-    console.log(this.colourHex);
   }
 }
