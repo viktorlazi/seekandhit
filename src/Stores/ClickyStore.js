@@ -13,7 +13,7 @@ export default class ClickyStore{
     .then(res=>res.json())
     .then(action(data=>{
       this.colourHex = '#'+data.colors[0].hex
+      this.addColour(this.colourHex);
     }));
-    this.addColour(this.colourHex);
   }
 }

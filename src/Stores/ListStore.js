@@ -7,6 +7,5 @@ export default class ListStore{
   }
   addColour(x){
     this.colours.push(x);
-    console.log(this.colours)
   }
 }
