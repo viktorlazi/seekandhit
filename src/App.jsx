@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Clicky content={clickyStore.content} />
+        <Clicky store={clickyStore} />
       </header>
     </div>
   );
