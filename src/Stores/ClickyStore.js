@@ -12,8 +12,11 @@ export default class ClickyStore{
     fetch('http://www.colr.org/json/color/random', {cache:'no-store'})
     .then(res=>res.json())
     .then(action(data=>{
-      this.colourHex = '#'+data.colors[0].hex
-      this.addColour(this.colourHex);
+      if(data.colors[0].hex){
+        const hex = '#' + data.colors[0].hex;
+        this.colourHex = hex;
+        this.addColour(hex);
+      }
     }));
   }
 }
