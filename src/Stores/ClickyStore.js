@@ -22,13 +22,4 @@ export default class ClickyStore{
       }
     }));
   }
-  /* api not working ?
-  fetchTenColours(){
-    fetch('http://www.colr.org/json/color/random/10/')
-    .then(res=>res.json())
-    .then(action(data=>{
-      console.log(data)
-    }));
-  }
-  */
 }
