@@ -36,3 +36,6 @@ input{
 input:focus{
   outline: none;
 }
+.bckgrnd{
+  padding: 0 30px;
+}
